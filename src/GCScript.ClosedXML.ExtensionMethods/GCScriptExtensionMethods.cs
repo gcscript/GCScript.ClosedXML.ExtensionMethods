@@ -61,6 +61,10 @@ public static class GCScriptExtensionMethods {
 		return columnTitles.FirstOrDefault(ct => ct.Title.Equals(title, StringComparison.OrdinalIgnoreCase))?.Position ?? 0;
 	}
 
+	public static string GetTitleByPosition(this List<GCSColumnTitle> columnTitles, int position) {
+		return columnTitles.FirstOrDefault(ct => ct.Position == position)?.Title ?? string.Empty;
+	}
+
 	public static List<GCSWorksheetTitle> GetWorksheetTitles(this IXLWorkbook wb) {
 		List<GCSWorksheetTitle> result = [];
 		foreach (var ws in wb.Worksheets) {
