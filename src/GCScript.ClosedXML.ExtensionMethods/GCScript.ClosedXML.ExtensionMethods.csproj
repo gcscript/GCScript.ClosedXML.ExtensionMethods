@@ -30,7 +30,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="ClosedXML" Version="0.104.1" />
+		<PackageReference Include="ClosedXML" Version="0.104.2" />
 		<PackageReference Include="GCScript.Common.Exceptions" Version="1.0.0" />
 	</ItemGroup>
 
